@@ -16,11 +16,11 @@
 
 
 ## ✅ commit 규칙
-- commit 메세지: [플랫폼] 번호_문제이름 / 난이도 / 걸린시간 
+- commit 메세지: [플랫폼] 번호_문제이름
 - description: 문제 주소 (option)
 - 터미널에서 작성법: 
 ```
-git commit -m "[BOJ] 21554_마법사의 돌 장난감 / 1분" -m "https://www.acmicpc.net/problem/2557"
+git commit -m "[BOJ] 21554_마법사의 돌 장난감"
 ```
 - 플랫폼 작성법 통일: 
   * [BOJ] - 백준 
