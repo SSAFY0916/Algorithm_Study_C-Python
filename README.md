@@ -9,13 +9,13 @@
 
 ## 스터디 규칙 
 
-## ✅ 진행 방식
+### ✅ 진행 방식
 - 주 2회 온라인(WebEx) 미팅
 - 매주 월요일 풀고 온 문제 풀이 및 코드 리뷰
 - 매주 목요일 모의 코딩테스트 진행, 코드 리뷰
 
 
-## ✅ commit 규칙
+### ✅ commit 규칙
 - commit 메세지: [플랫폼] 번호_문제이름
 - description: 문제 주소 (option)
 - 터미널에서 작성법: 
@@ -28,18 +28,23 @@ git commit -m "[BOJ] 21554_마법사의 돌 장난감"
   * [PGS] - 프로그래머스
   * [ETC] - 그외
 
-## ✅ 파일 및 폴더 구조
-WEEK1 | 
-      | BOJ_9999
-                | hjd
+### ✅ 파일 및 폴더 구조
+WEEK1 / BOJ_9999 / name
+
+#### ✅ Weekly Problem Solving
+
+| **주차** | **문제 1**    | **문제 2**    | **문제 3**    | **문제 4**    | **문제 5**    | **문제 6**    | **진행 현황** |
+| -------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | -------------|
+| WEEK1  | [이미지 축소](https://www.acmicpc.net/problem/22994) | [롤케이크](https://www.acmicpc.net/problem/16206) | [레이저빔은 어디로](https://www.acmicpc.net/problem/3709) | [지뢰](https://www.acmicpc.net/problem/2232) | [큐빙](https://www.acmicpc.net/problem/5373) | [게리맨더링2](https://www.acmicpc.net/problem/17779) | `진행 완료`   |
+
 
 ### Git 순서
 
 - git fetch
 - git add .
-- git commit -m "[BOJ-문제번호] 문제명" 
+- git commit -m "[BOJ-문제번호] 문제명"
 - git pull origin main
-- git push origin main
+- git push origin [개인 브랜치]
 
 ## ✅ 설명 방식
 
