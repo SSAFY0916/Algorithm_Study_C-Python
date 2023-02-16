@@ -6,6 +6,7 @@
 - 정기 회의: 목요일 오후 8시
 - 참고 사이트: [백준](https://www.acmicpc.net/)
 - 언어: C++, Python
+- 노션: https://www.notion.so/16-C-Python-623b3b1348874db298d99aac8053243e?pvs=4
 
 ## 스터디 규칙 
 
