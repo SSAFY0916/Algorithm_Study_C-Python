@@ -37,6 +37,7 @@ WEEK1 / BOJ_9999 / name
 | **주차** | **문제 1**    | **문제 2**    | **문제 3**    | **문제 4**    | **문제 5**    | **문제 6**    | **진행 현황** |
 | -------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | -------------|
 | WEEK1  | [이미지 축소](https://www.acmicpc.net/problem/22994) | [롤케이크](https://www.acmicpc.net/problem/16206) | [레이저빔은 어디로](https://www.acmicpc.net/problem/3709) | [지뢰](https://www.acmicpc.net/problem/2232) | [큐빙](https://www.acmicpc.net/problem/5373) | [게리맨더링2](https://www.acmicpc.net/problem/17779) | `진행 완료`   |
+| WEEK2  | 모의 코딩테스트 | [마법사 상어와 복제](https://www.acmicpc.net/problem/23290) | `진행 완료`   |
 
 
 ### Git 순서
