@@ -6,7 +6,9 @@
 - 정기 회의: 목요일 오후 8시
 - 참고 사이트: [백준](https://www.acmicpc.net/)
 - 언어: C++, Python
-- 노션: https://www.notion.so/16-C-Python-623b3b1348874db298d99aac8053243e?pvs=4
+- 노션: [바로가기](https://www.notion.so/16-C-Python-623b3b1348874db298d99aac8053243e?pvs=4)
+
+<br>
 
 ## 스터디 규칙 
 
@@ -50,6 +52,8 @@ WEEK1 / BOJ_9999 / name
 - git commit -m "[BOJ-문제번호] 문제명"
 - git pull origin main
 - git push origin [개인 브랜치]
+
+<br>
 
 ## ✅ 설명 방식
 
