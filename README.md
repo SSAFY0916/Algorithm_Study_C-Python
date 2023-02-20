@@ -34,10 +34,13 @@ WEEK1 / BOJ_9999 / name
 
 #### ✅ Weekly Problem Solving
 
-| **주차** | **분류** | **문제 1**    | **문제 2**    | **문제 3**    | **문제 4**    | **문제 5**    | **문제 6**    | **진행 현황** |
+| **주차** | **분류** | **문제 A**    | **문제 B**    | **문제 C**    | **문제 D**    | **문제 E**    | **문제 F**    | **진행 현황** |
 | -------- | -------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | -------------|
 | WEEK1  | 데일리문제  | [이미지 축소](https://www.acmicpc.net/problem/22994) | [롤케이크](https://www.acmicpc.net/problem/16206) | [레이저빔은 어디로](https://www.acmicpc.net/problem/3709) | [지뢰](https://www.acmicpc.net/problem/2232) | [큐빙](https://www.acmicpc.net/problem/5373) | [게리맨더링2](https://www.acmicpc.net/problem/17779) | `진행 완료`   |
-| WEEK2  | 모의코테  | [마법사 상어와 복제](https://www.acmicpc.net/problem/23290) |  |   |   |   |   | `진행 완료`   |
+| WEEK1  | 모의코테  | [마법사 상어와 복제](https://www.acmicpc.net/problem/23290) |  |   |   |   |   | `진행 완료`   |
+| WEEK2  | 데일리문제  | [바닥 장식](https://www.acmicpc.net/problem/1388) | [카드 놓기](https://www.acmicpc.net/problem/18115) | [폴더 정리(small)](https://www.acmicpc.net/problem/22860) | [쉬운 최단거리](https://www.acmicpc.net/problem/14940) | [퇴사](https://www.acmicpc.net/problem/15486) | [외계인의 기타 연주](https://www.acmicpc.net/problem/2841) | `진행 완료`   |
+| WEEK2  | 모의코테  | [- ](  ) |  |   |   |   |   | `진행 완료`   |
+
 
 
 ### Git 순서
@@ -54,6 +57,5 @@ WEEK1 / BOJ_9999 / name
 2. 문제 풀이를 위한 접근 방식(or 개념) 설명
 3. 기본 코드에 대한 설명
 4. 추가적으로 개선한 코드에 대한 설명
-5. 시간 복잡도, 공간 복잡도 계산 => 어려우면 실행 시간 캡처로 대체
-6. 사용 라이브러리 정리
-7. 기타(문제 풀이에 어려웠던 점, 구현하고자 했는데 실패한 방식)
+5. 사용 라이브러리 정리
+6. 기타(문제 풀이에 어려웠던 점, 구현하고자 했는데 실패한 방식)
