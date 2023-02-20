@@ -33,7 +33,7 @@ def dfs(f_name):
             else:  # 폴더 내에 파일이 있다면
                 cnt += 1  # 파일 개수 추가
                 file_set.add(fn[1])  # 파일 종류 추가(set으로 중복제거)
-ㄴ
+                
 
 # 쿼리 실행
 q = int(input())
