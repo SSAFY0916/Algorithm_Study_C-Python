@@ -41,9 +41,8 @@ WEEK1 / BOJ_9999 / name
 | WEEK1  | 데일리문제  | [이미지 축소](https://www.acmicpc.net/problem/22994) | [롤케이크](https://www.acmicpc.net/problem/16206) | [레이저빔은 어디로](https://www.acmicpc.net/problem/3709) | [지뢰](https://www.acmicpc.net/problem/2232) | [큐빙](https://www.acmicpc.net/problem/5373) | [게리맨더링2](https://www.acmicpc.net/problem/17779) | `진행 완료`   |
 | WEEK1  | 모의코테  | [마법사 상어와 복제](https://www.acmicpc.net/problem/23290) |  |   |   |   |   | `진행 완료`   |
 | WEEK2  | 데일리문제  | [바닥 장식](https://www.acmicpc.net/problem/1388) | [카드 놓기](https://www.acmicpc.net/problem/18115) | [폴더 정리(small)](https://www.acmicpc.net/problem/22860) | [쉬운 최단거리](https://www.acmicpc.net/problem/14940) | [퇴사](https://www.acmicpc.net/problem/15486) | [외계인의 기타 연주](https://www.acmicpc.net/problem/2841) | `진행 완료`   |
-| WEEK2  | 모의코테  | [- ](  ) |  |   |   |   |   | `진행 완료`   |
-
-
+| WEEK3  | 데일리문제  | [매직스타](https://www.acmicpc.net/problem/3967) | [RGB거리 2](https://www.acmicpc.net/problem/17404) | [전쟁 - 전투](https://www.acmicpc.net/problem/1303) | [괄호 추가하기](https://www.acmicpc.net/problem/16637) | [바리스타의 힘](https://www.acmicpc.net/problem/24439) | [문자열 교환](https://www.acmicpc.net/problem/1522) | `진행 완료`   |
+| WEEK3  | 모의코테  | [- ](  ) |  |   |   |   |   | `진행 예정`   |
 
 ### Git 순서
 
