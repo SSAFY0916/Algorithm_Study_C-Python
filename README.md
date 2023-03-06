@@ -23,7 +23,7 @@ WEEK1 / BOJ_9999 / name
 | WEEK2  | 모의코테  | [마법사 상어와 복제](https://www.acmicpc.net/problem/23290) |  |   |   |   |   | `진행 완료`   | 23.02.16 |
 | WEEK2  | 데일리문제  | [바닥 장식](https://www.acmicpc.net/problem/1388) | [카드 놓기](https://www.acmicpc.net/problem/18115) | [폴더 정리(small)](https://www.acmicpc.net/problem/22860) | [쉬운 최단거리](https://www.acmicpc.net/problem/14940) | [퇴사](https://www.acmicpc.net/problem/15486) | [외계인의 기타 연주](https://www.acmicpc.net/problem/2841) | `진행 완료`   | 23.02.20 | 
 | WEEK3  | 데일리문제  | [매직스타](https://www.acmicpc.net/problem/3967) | [RGB거리 2](https://www.acmicpc.net/problem/17404) | [전쟁 - 전투](https://www.acmicpc.net/problem/1303) | [괄호 추가하기](https://www.acmicpc.net/problem/16637) | [바리스타의 힘](https://www.acmicpc.net/problem/24439) | [문자열 교환](https://www.acmicpc.net/problem/1522) | `진행 완료`   | 23.02.27 |
-| WEEK4  | 모의코테  | [단어 만들기] (https://www.acmicpc.net/problem/1148) | [연구소3] (https://www.acmicpc.net/problem/17142) |   |   |   |   | `진행 완료`   | 23.03.02 |
+| WEEK4  | 모의코테  | [단어 만들기](https://www.acmicpc.net/problem/1148) | [연구소3](https://www.acmicpc.net/problem/17142) |   |   |   |   | `진행 완료`   | 23.03.02 |
 | WEEK4  | 데일리문제  | [전깃줄](https://www.acmicpc.net/problem/2565) | [입국심사](https://www.acmicpc.net/problem/3079) | [놀이 공원](https://www.acmicpc.net/problem/1561) | [가장 큰 정사각형](https://www.acmicpc.net/problem/1915) | [결! 합!](https://www.acmicpc.net/problem/16722) | - | `진행 완료`   | 23.03.06 |
 
 ## 스터디 규칙 
