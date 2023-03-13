@@ -1,69 +1,122 @@
 #include <iostream>
 #include <vector>
 #include <queue>
-#include <cmath>
+#include <utility>
+#include <algorithm>
 
-#define CITY_SIZE 10001
-
-// 1949 우수 마을
+// 20056 마법사 상어와 파이어볼
 
 using namespace std;
 
-int N;
-int population[CITY_SIZE];
-vector<int> way[CITY_SIZE];
+struct FireBall {
+	int r, c, m, s, d;
+};
 
-bool beenCity[CITY_SIZE] = { false, };
-int dp[CITY_SIZE][2]; // 우수 마을일 경우의 dp와 아닐 경우의 dp
+int N, M, K;
+int grid[51][51]; // 1~50
+vector<FireBall> pos[51][51];
+queue<FireBall> balls;
 
-void getMaxPopulation(int city);
+int dx[9] = { -1, -1, 0, 1, 1, 1, 0, -1 };
+int dy[9] = { 0, 1, 1, 1, 0, -1, -1, -1, };
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0), cout.tie(0);
 
-	cin >> N;
-	for (int i = 1; i <= N; i++) {
-		cin >> population[i];
-		dp[i][0] = 0;
-		dp[i][1] = 0;
-	}
-	for (int i = 0; i < N - 1; i++) {
-		int a, b;
-		cin >> a >> b;
-		way[a].push_back(b);
-		way[b].push_back(a);
+	cin >> N >> M >> K;
+	for (int i = 1; i <= M; i++) {
+		int r, c, m, s, d;
+		cin >> r >> c >> m >> s >> d;
+
+		// grid[r][c] = i;
+		balls.push(FireBall{ r, c, m, s, d });
 	}
 
-	// 한 마을을 첫 우수 마을로 선정한 뒤 뻗어 나가기
-	getMaxPopulation(1);
+	for (int k = 0; k < K; k++) { // K초 동안 반복
+		while (!balls.empty()) {
+			FireBall cur = balls.front();
+			balls.pop();
 
-	cout << max(dp[1][0], dp[1][1]);
+			int len = cur.s % N;
+			int nr = cur.r + (dx[cur.d] * len);
+			int nc = cur.c + (dy[cur.d] * len);
+			
+			if (nr < 1) nr += N;
+			else if (nr > N) nr -= N;
+			if (nc < 1) nc += N;
+			else if (nc > N) nc -= N;
+		
+			cur.r = nr;
+			cur.c = nc;
+			pos[nr][nc].push_back(cur);
+		}
 
-	return 0;
-}
+		vector<FireBall> tmp[51][51]; // 나뉜 정보 저장
+		for (int i = 1; i <= N; i++) {
+			for (int j = 1; j <= N; j++) {
+				if (pos[i][j].size() == 0) continue;
 
-void getMaxPopulation(int city) {
-	beenCity[city] = true;
+				FireBall cur = pos[i][j][0];
+				if (pos[i][j].size() == 1) {
+					tmp[i][j].push_back(cur);
+				}
+				else {
+					bool same = true;
 
-	queue<int> cities;
-	for (int i = 0; i < way[city].size(); i++) {
-		int nxt = way[city][i];
-		if (beenCity[nxt]) continue;
-		getMaxPopulation(nxt);
-		cities.push(nxt);
-	}
+					int mm = cur.m;
+					int ss = cur.s;
+					int dd = cur.d; // 기준 방향
 
-	dp[city][0] = population[city]; // 우수 마을인 경우
-	dp[city][1] = 0; // 우수 마을이 아닌 경우
+					for (int l = 1; l < pos[i][j].size(); l++) {
+						mm += pos[i][j][l].m;
+						ss += pos[i][j][l].s;
+						if (dd % 2 != pos[i][j][l].d % 2) {
+							same = false;
+						}
+					}
 
-	if (cities.size() > 0) {
-		int s = cities.size();
-		while (s-- > 0) {
-			int nxt = cities.front();
-			cities.pop();
-			dp[city][0] += dp[nxt][1];
-			dp[city][1] += max(dp[nxt][0], dp[nxt][1]);
+					mm /= 5;
+					if (mm > 0) {
+						ss /= pos[i][j].size();
+						if (same) { // 0, 2, 4, 6
+							tmp[i][j].push_back(FireBall{ cur.r, cur.c, mm, ss, 0 });
+							tmp[i][j].push_back(FireBall{ cur.r, cur.c, mm, ss, 2 });
+							tmp[i][j].push_back(FireBall{ cur.r, cur.c, mm, ss, 4 });
+							tmp[i][j].push_back(FireBall{ cur.r, cur.c, mm, ss, 6 });
+						}
+						else { // 1, 3, 5, 7
+							tmp[i][j].push_back(FireBall{ cur.r, cur.c, mm, ss, 1 });
+							tmp[i][j].push_back(FireBall{ cur.r, cur.c, mm, ss, 3 });
+							tmp[i][j].push_back(FireBall{ cur.r, cur.c, mm, ss, 5 });
+							tmp[i][j].push_back(FireBall{ cur.r, cur.c, mm, ss, 7 });
+						}
+					}
+					
+				}
+
+				pos[i][j].clear();
+			}
+		}
+
+		for (int i = 1; i <= N; i++) {
+			for (int j = 1; j <= N; j++) {
+				if (tmp[i][j].size() == 0) continue;
+
+				for (int l = 0; l < tmp[i][j].size(); l++) {
+					balls.push(tmp[i][j][l]);
+				}
+			}
 		}
 	}
+
+	int total = 0;
+	while (!balls.empty()) {
+		total += balls.front().m;
+		balls.pop();
+	}
+
+	cout << total;
+
+	return 0;
 }
