@@ -16,7 +16,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          repo-token: ${{ secrets.TOKEN }}
           ref: ${{ matrix.update_branch }}
       - name: Merge updates
         env:
