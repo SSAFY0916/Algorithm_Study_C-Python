@@ -11,23 +11,23 @@ data = [list(map(int, list(input().strip()))) for _ in range(n)]
 
 
 def bfs():
-    queue = deque([(0, 0, 1)])
+    queue = deque([(0, 0, 0)])
     visit = [[[0] * 2 for _ in range(m)] for _ in range(n)]
-    visit[0][0][1] = 1
+    visit[0][0][0] = 1
     while queue:
-        r, c, dist = queue.popleft()
+        r, c, bomb = queue.popleft()
         if (r, c) == (n - 1, m - 1):
-            return visit[r][c][dist]
+            return visit[r][c][bomb]
         for i in range(4):
             rr, cc = r + direction[i][0], c + direction[i][1]
-            if not (0 <= rr < n and 0 <= cc < m): continue
+            if not (0 <= rr < n and 0 <= cc < m) or visit[rr][cc][bomb]: continue
 
-            if data[rr][cc] == 1 and dist == 1:
-                visit[rr][cc][0] = visit[r][c][1] + 1
-                queue.append((rr, cc, 0))
-            elif data[rr][cc] == 0 and visit[rr][cc][dist] == 0:
-                visit[rr][cc][dist] = visit[r][c][dist] + 1
-                queue.append((rr, cc, dist))
+            if data[rr][cc] == 0:  # 벽이 아님
+                visit[rr][cc][bomb] = visit[r][c][bomb] + 1
+                queue.append((rr, cc, bomb))
+            elif bomb == 0:  # 벽이고 아직 안 부숨
+                visit[rr][cc][1] = visit[r][c][0] + 1
+                queue.append((rr, cc, 1))
     return -1
 
 
