@@ -56,7 +56,7 @@ public class Main {
 			else // 쿠폰 초밥 먹었다면
 				result = Math.max(result, cnt);
 		}
-
+ 
 		System.out.println(result);
 	}
 }
