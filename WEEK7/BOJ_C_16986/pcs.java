@@ -104,11 +104,6 @@ public class Main {
 			cnt[p1]-=1;
 			cnt[p2]-=1;
 			used[num] = false;
-		}
-		
-		
-		
+		}	
 	}
-	
-
 }
