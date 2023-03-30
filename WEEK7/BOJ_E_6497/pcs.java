@@ -2,7 +2,6 @@ import java.util.*;
 import java.io.*;
 
 public class Main {
-	
 	static int n, m;
 	static int[][] road;
 	static boolean visited[];
